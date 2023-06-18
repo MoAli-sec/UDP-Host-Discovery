@@ -121,82 +121,82 @@ sudo python script.py
 
 On Windows you will need to start the cmd or PowerShell with administrator privileges by right click on it then choose run as administrator
 
-### ip_packet_capture.py
-After you open your terminal you can run the following
+- ### ip_packet_capture.py
+     After you open your terminal you can run the following
 
-```
-sudo python ip_packet_capture.py
-```
+     ```
+     sudo python ip_packet_capture.py
+     ```
 
-In another terminal run a ping to any website for example google.com:
+     In another terminal run a ping to any website for example google.com:
 
-```
-ping google.com
-```
+     ```
+     ping google.com
+     ```
 
-The Output should be like:
+     The Output should be like:
+     
+     ```
+     (b'E\x00\x00T\x00\x00\x00\x00v\x01\xce\xd5\x8e\xfb%.\xc0\xa8\x01\x02\x00\x00q\x7f\xdbt\x00\x01\xe6`\x8fd\x00\x00\x00\x00xr\x06\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567', ('142.251.37.46', 0))
+     ```
 
-```
-(b'E\x00\x00T\x00\x00\x00\x00v\x01\xce\xd5\x8e\xfb%.\xc0\xa8\x01\x02\x00\x00q\x7f\xdbt\x00\x01\xe6`\x8fd\x00\x00\x00\x00xr\x06\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567', ('142.251.37.46', 0))
-```
+- ### ip_header_ctypes.py
+     This script will take the previous output and give us a readble IPs
 
-### ip_header_ctypes.py
-This script will take the previous output and give us a readble IPs
+     I added an Example of usage on the script you can uncomment it to test the results
+     
+     After you open your terminal you can run the following
 
-I added an Example of usage on the script you can uncomment it to test the results
+     ```
+     sudo python ip_header_ctypes.py
+     ```
 
-After you open your terminal you can run the following
+- ### ip_header_struct.py
+     This script will take the previous output and give us a readble IPs
 
-```
-sudo python ip_header_ctypes.py
-```
+     I added an Example of usage on the script you can uncomment it to test the results
 
-### ip_header_struct.py
-This script will take the previous output and give us a readble IPs
+     After you open your terminal you can run the following
 
-I added an Example of usage on the script you can uncomment it to test the results
+     ```
+     sudo python ip_header_struct.py
+     ```
 
-After you open your terminal you can run the following
+- ### network_traffic_sniffer.py
+     This script keep sniffing the network and print the output of the decoding
 
-```
-sudo python ip_header_struct.py
-```
+     In this script the output will very on Windows and Linux
 
-### network_traffic_sniffer.py
-This script keep sniffing the network and print the output of the decoding
+     Running on Windows
 
-In this script the output will very on Windows and Linux
+     ```
+     python network_traffic_sniffer.py
+     ```
 
-Running on Windows
+     Now, because Windows is pretty chatty, you're likely to see output immediatlly
 
-```
-python network_traffic_sniffer.py
-```
+     Running on Linux
 
-Now, because Windows is pretty chatty, you're likely to see output immediatlly
+     ```
+     sudo python network_traffic_sniffer.py
+     ```
 
-Running on Linux
+     To get output here you will have to ping any website also in another terminal
 
-```
-sudo python network_traffic_sniffer.py
-```
+     ```
+     ping google.com
+     ```
 
-To get output here you will have to ping any website also in another terminal
-
-```
-ping google.com
-```
-
-### icmp_sniffer.py
-Is the same as `network_traffic_sniffer.py` but with the addition of decoding the ICMP and extracting some additional values from it.
+- ### icmp_sniffer.py
+     Is the same as `network_traffic_sniffer.py` but with the addition of decoding the ICMP and extracting some additional values from it.
 
 
-### scanner.py
-This script you can run it on any OS and it will give you the same results which is the hosts that are up on your network
+- ### scanner.py
+     This script you can run it on any OS and it will give you the same results which is the hosts that are up on your network
 
-```
-sudo python scanner.py
-```
+     ```
+     sudo python scanner.py
+     ```
 
 # Disclaimer
 This tool is intended for educational and testing purposes only. Please use responsibly and with the explicit permission of the network owner. Use them at your own risk.
