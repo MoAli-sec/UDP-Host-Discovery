@@ -93,7 +93,7 @@ First we need to know how the Destination Unreachable ICMP message looks like:
 
 We will use the struct module to decode it and it follows the same approach as decoding the IP
 
-But the only difference is you have to extract it first and you that calculate the value of the `offset` variable as you should know the ICMP message starts in the `IP.ihl (Header length) * 4`
+But the only difference is you have to extract it first and you do that by calculate the value of the `offset` variable as you should know the ICMP message starts in the `IP.ihl (Header length) * 4`
 
 The script `icmp_sniffer.py` demos the idea of how it works.
 
