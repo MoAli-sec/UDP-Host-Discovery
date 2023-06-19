@@ -1,9 +1,6 @@
 import socket
 import os
 
-# Host to listen on
-HOST = '192.168.1.2'
-
 
 def main():
     # Create raw socket, bin to public interface
@@ -34,4 +31,11 @@ def main():
         
 
 if __name__ == "__main__":
-    main()
+    # Check command-line arguments for the target host
+    if len(sys.argv) == 2:
+        HOST = sys.argv[1]
+    else:
+        HOST = '192.168.1.2'  # Default target host
+
+    # Start sniffing
+    main(HOST)
