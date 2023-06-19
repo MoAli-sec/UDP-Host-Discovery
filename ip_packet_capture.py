@@ -3,7 +3,7 @@ import os
 import sys
 
 
-def main():
+def main(host):
     # Create raw socket, bin to public interface
     if os.name == 'nt':
         # For Windows, use IPPROTO_IP as the socket protocol
