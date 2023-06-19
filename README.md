@@ -125,7 +125,7 @@ On Windows you will need to start the cmd or PowerShell with administrator privi
      After you open your terminal you can run the following
 
      ```
-     sudo python ip_packet_capture.py
+     sudo python ip_packet_capture.py [Your_IPaddress]
      ```
 
      In another terminal run a ping to any website for example google.com:
@@ -170,7 +170,7 @@ On Windows you will need to start the cmd or PowerShell with administrator privi
      Running on Windows
 
      ```
-     python network_traffic_sniffer.py
+     python network_traffic_sniffer.py [Your_IPaddress]
      ```
 
      Now, because Windows is pretty chatty, you're likely to see output immediatlly
@@ -178,7 +178,7 @@ On Windows you will need to start the cmd or PowerShell with administrator privi
      Running on Linux
 
      ```
-     sudo python network_traffic_sniffer.py
+     sudo python network_traffic_sniffer.py [Your_IPaddress]
      ```
 
      To get output here you will have to ping any website also in another terminal
@@ -195,7 +195,7 @@ On Windows you will need to start the cmd or PowerShell with administrator privi
      This script you can run it on any OS and it will give you the same results which is the hosts that are up on your network
 
      ```
-     sudo python scanner.py
+     sudo python scanner.py [Your_IPaddress]
      ```
 
 # Disclaimer
